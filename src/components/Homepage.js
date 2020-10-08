@@ -1,13 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 
 class Homepage extends React.Component {
   render() {
     return (
-      <div>
+      <HomeWrapper>
         <h1>Hello from Homepage</h1>
-      </div>
+      </HomeWrapper>
     )
   }
 }
+
+const HomeWrapper = styled.div`
+*{
+  margin-top:10vh;
+  padding:0;
+}
+`
+
 
 export default Homepage;
