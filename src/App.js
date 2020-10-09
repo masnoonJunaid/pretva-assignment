@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
-import Homepage from './components/Homepage'
 import SearchBar from './components/Searchbar'
 import Orders from './components/Orders'
 import Footer from './components/Footer'
@@ -12,7 +11,8 @@ function App() {
     <div>
       <Navbar/>
       <br/>
-      <Homepage/>
+      <br/>
+      <br/>
       <SearchBar/>
       <Orders/>
       <Footer/>
