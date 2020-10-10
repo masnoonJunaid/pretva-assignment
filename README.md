@@ -1,10 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project specification
+This react application contains 5 following components.
+ #### `Footer, Home, Navbar, Orders, Searchbar`
+
+ ### `Issues With UI`
+ 1. UI is not fully responsive, just few query to be added to make this mobile first fully responsive.
+ 2. There is a glitch with context API, due to not destructring array correctly, will be fixed soon.
+
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -17,7 +26,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.

@@ -116,6 +116,12 @@ const SearchStyle = styled.div`
   width:15%;
 }
 
+// codes for responsive layout
+
+@media screen and (max-width:830px){
+
+}
+
 `
 
 

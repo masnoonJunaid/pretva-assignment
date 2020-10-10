@@ -57,6 +57,32 @@ const NavWrapper = styled.nav`
   width:40%;
 }
 
+@media screen and (max-width:1095px){
+  .link-list{
+    padding:20px;
+    width:30%;
+  }
+  .nav-links{
+    margin:1%;
+  }
+}
+
+@media screen and (max-width:800px)
+{
+  .link-list{
+    display:none;
+  }
+  .left-float{
+    padding:0;
+    width:10%;
+    margin:2%;
+  }
+  #log-out{
+    width:15%;
+    height:20%;
+  }
+}
+
 .nav-links{
   margin:2%;
   text-decoration:none;
