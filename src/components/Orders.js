@@ -36,7 +36,7 @@ class Orders extends React.Component{
 const OrderStyle = styled.div`
 
 *{
-  margin:1%;
+  margin:02%;
   padding:0;
 }
 
@@ -48,6 +48,10 @@ const OrderStyle = styled.div`
   display:flex;
   flex-wrap:wrap;
   float:left;
+  margin:1%;
+  // margin-left:auto;
+  // margin-right:auto;
+  align-item:center;
 }
 .user-details{
   display:flex;
