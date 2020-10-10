@@ -22,7 +22,7 @@ class Navbar extends React.Component {
         </Link>
         <button className="left-float" id="button">
           <span className="my-account">My Account</span>
-          <img id="dropdown" alt="" src="logos/dropdown.svg"/>
+          {/*<img id="dropdown" alt="" src="logos/dropdown.svg"/>*/}
         </button>
         {/*<div className="dropdown-list">
           <Link className="dropdown-link">Log Out</Link>
