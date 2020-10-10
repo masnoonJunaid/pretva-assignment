@@ -16,7 +16,6 @@ function App() {
       <br/>
       <SearchBar/>
       <Home/>
-      <Orders/>
       <Footer/>
     </div>
   );

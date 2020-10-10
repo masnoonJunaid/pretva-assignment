@@ -19,14 +19,19 @@ class MethodProvider extends Component{
       temProfiles = [...temProfiles, singleProfile]
     });
     this.setState(() => {
-      return {orders:temProfiles}
-    })
+      return {orders:temProfiles};
+    });
   }
+
+  handleSearch = () => {
+    console.log('Hello from search Result')
+  };
 
   render(){
     return(
       <MethodContext.Provider value={{
-        ...this.state
+        ...this.state,
+        handleSearch: this.handleSearch
       }}
       >
       {this.props.children}
@@ -36,4 +41,4 @@ class MethodProvider extends Component{
 }
 
 const MethodConsumer = MethodContext.Consumer;
-export {MethodProvider, MethodConsumer}
+export {MethodProvider, MethodConsumer};

@@ -7,13 +7,11 @@ import * as serviceWorker from './serviceWorker';
 import {MethodProvider} from './context';
 
 ReactDOM.render(
-<React.StrictMode>
   <MethodProvider>
    <Router>
       <App />
     </Router>
   </MethodProvider>
-</React.StrictMode>
   ,document.getElementById('root')
 );
 

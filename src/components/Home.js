@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {MethodConsumer} from '../context'
-import Orders from 'orders'
+import Orders from './Orders'
 
 class Home extends React.Component {
   render(){
@@ -11,7 +11,7 @@ class Home extends React.Component {
         <MethodConsumer>
           {value=>{
             return value.orders.map(data => {
-              return <Orders/>
+              return <Orders key = {data.id} order = {data}/>;
             })
           }}
         </MethodConsumer>
