@@ -1,23 +1,23 @@
 import React,{Component} from 'react';
-import {orderDetails} from './data'
+import {orderDetails} from './Data'
 
 const MethodContext = React.createContext();
 // Provider and Consumer methods make sure data is flowing top to bottom
 
-class methodProvider extends Component{
+class MethodProvider extends Component{
   state = {
-    orders: [],
-  }
+    orders: []
+  };
   componentDidMount(){
     this.setProfile();
   }
 
   setProfile = () => {
     let temProfiles = [];
-    orderDetails.foreach(item=>{
+    orderDetails.forEach(item => {
       const singleProfile = {...item};
       temProfiles = [...temProfiles, singleProfile]
-    })
+    });
     this.setState(() => {
       return {orders:temProfiles}
     })
@@ -36,4 +36,4 @@ class methodProvider extends Component{
 }
 
 const MethodConsumer = MethodContext.Consumer;
-export {methodProvider, MethodConsumer}
+export {MethodProvider, MethodConsumer}
